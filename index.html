@@ -22,20 +22,23 @@
 <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;600;700;900&family=Noto+Sans+TC:wght@300;400;500;700&display=swap" rel="stylesheet">
 <style>
   :root{
-    --bg:#1c1916;
+    --bg:#f7f3ea;
     --bg-alt:rgba(184,112,63,0.05);
-    --panel:rgba(48,42,36,0.55);
-    --line:rgba(217,201,168,0.16);
-    --ink:#ede7dc;
-    --ink-dim:#c7beac;
-    --ink-faint:#93897a;
-    --primary:#b8703f;
-    --primary-soft:rgba(184,112,63,0.16);
-    --gold:#d9c9a8;
-    --gold-soft:rgba(217,201,168,0.16);
-    --moss:#6b7568;
+    --panel:rgba(255,253,248,0.7);
+    --line:rgba(60,45,25,0.13);
+    --ink:#2b241c;
+    --ink-dim:#5c5142;
+    --ink-faint:#8c8172;
+    --primary:#b06a38;
+    --primary-soft:rgba(176,106,56,0.10);
+    --gold:#8a6329;
+    --gold-soft:rgba(138,99,41,0.12);
+    --moss:#5c6b52;
     --indigo:#26221d;
-    --shadow: 0 20px 50px rgba(0,0,0,0.45);
+    --shadow: 0 20px 50px rgba(40,30,15,0.10);
+    --hero-ink:#f5efe2;
+    --hero-dim:#dcd2bd;
+    --hero-gold:#e3c58a;
   }
   *{box-sizing:border-box; margin:0; padding:0;}
   html{scroll-behavior:smooth;}
@@ -45,13 +48,13 @@
     line-height:1.85;
     font-weight:300;
     background:
-      radial-gradient(ellipse 60% 45% at 8% 4%, rgba(184,112,63,0.26), transparent 60%),
-      radial-gradient(ellipse 55% 50% at 96% 14%, rgba(217,201,168,0.16), transparent 62%),
-      radial-gradient(ellipse 55% 45% at 90% 46%, rgba(107,117,104,0.26), transparent 60%),
-      radial-gradient(ellipse 60% 50% at 2% 56%, rgba(184,112,63,0.20), transparent 62%),
-      radial-gradient(ellipse 55% 45% at 94% 82%, rgba(217,201,168,0.14), transparent 60%),
-      radial-gradient(ellipse 60% 45% at 6% 96%, rgba(107,117,104,0.22), transparent 60%),
-      linear-gradient(180deg, #201c18 0%, #1c1916 40%, #17140f 100%);
+      radial-gradient(ellipse 60% 45% at 8% 4%, rgba(184,112,63,0.10), transparent 60%),
+      radial-gradient(ellipse 55% 50% at 96% 14%, rgba(138,99,41,0.08), transparent 62%),
+      radial-gradient(ellipse 55% 45% at 90% 46%, rgba(107,117,104,0.10), transparent 60%),
+      radial-gradient(ellipse 60% 50% at 2% 56%, rgba(184,112,63,0.08), transparent 62%),
+      radial-gradient(ellipse 55% 45% at 94% 82%, rgba(138,99,41,0.07), transparent 60%),
+      radial-gradient(ellipse 60% 45% at 6% 96%, rgba(107,117,104,0.09), transparent 60%),
+      linear-gradient(180deg, #faf7f0 0%, #f7f3ea 40%, #f2ede1 100%);
     background-attachment:fixed;
   }
   h1,h2,h3,h4{
@@ -96,48 +99,49 @@
     font-family:"Noto Serif TC", serif;
     font-size:0.85rem;
     letter-spacing:0.35em;
-    color:var(--gold);
+    color:var(--hero-gold);
     margin-bottom:22px;
     text-transform:uppercase;
   }
-  .hero-eyebrow::before{content:"—"; color:var(--primary);}
+  .hero-eyebrow::before{content:"—"; color:var(--hero-gold);}
   .hero h1{
     font-size:clamp(2.6rem, 7vw, 5.2rem);
     line-height:1.05;
     margin-bottom:18px;
+    color:var(--hero-ink);
     text-shadow:0 6px 30px rgba(0,0,0,0.6);
   }
   .hero h1 small{
     display:block;
     font-size:0.32em;
     font-weight:400;
-    color:var(--ink-dim);
+    color:var(--hero-dim);
     letter-spacing:0.2em;
     margin-top:14px;
   }
   .hero-desc{
     max-width:580px;
-    color:var(--ink-dim);
+    color:var(--hero-dim);
     font-size:1.05rem;
     margin-bottom:28px;
   }
   .hero-tags{display:flex; flex-wrap:wrap; gap:10px;}
   .tag{
-    border:1px solid var(--line);
+    border:1px solid rgba(245,239,226,0.3);
     padding:6px 16px;
     border-radius:999px;
     font-size:0.82rem;
-    color:var(--ink-dim);
+    color:var(--hero-dim);
     background:rgba(0,0,0,0.25);
     backdrop-filter:blur(4px);
   }
   .scroll-cue{
     position:absolute; bottom:26px; left:50%; transform:translateX(-50%);
-    z-index:2; color:var(--ink-faint); font-size:0.75rem; letter-spacing:0.2em;
+    z-index:2; color:var(--hero-dim); font-size:0.75rem; letter-spacing:0.2em;
     display:flex; flex-direction:column; align-items:center; gap:8px;
   }
   .scroll-cue span{
-    width:1px; height:34px; background:linear-gradient(var(--gold), transparent);
+    width:1px; height:34px; background:linear-gradient(var(--hero-gold), transparent);
     animation:scrollpulse 2s ease-in-out infinite;
   }
   @keyframes scrollpulse{0%,100%{opacity:0.2;}50%{opacity:1;}}
@@ -236,9 +240,9 @@
   }
   .banner .wrap{position:relative; z-index:2;}
   .banner-box{max-width:480px;}
-  .banner-box .kicker{color:var(--gold);}
-  .banner-box h2{font-size:clamp(1.7rem,3.4vw,2.3rem); margin-bottom:16px;}
-  .banner-box p{color:var(--ink-dim);}
+  .banner-box .kicker{color:var(--hero-gold);}
+  .banner-box h2{font-size:clamp(1.7rem,3.4vw,2.3rem); margin-bottom:16px; color:var(--hero-ink);}
+  .banner-box p{color:var(--hero-dim);}
 
   /* ---------- Guide cards ---------- */
   .guide-grid{display:grid; grid-template-columns:repeat(3,1fr); gap:20px;}
@@ -284,7 +288,7 @@
 
   /* ---------- Footer ---------- */
   footer{
-    background:#14110d; padding:60px 0 34px; border-top:1px solid var(--line);
+    background:#efe8d8; padding:60px 0 34px; border-top:1px solid var(--line);
   }
   footer .wrap{display:flex; flex-direction:column; gap:18px; align-items:flex-start;}
   footer h3{font-size:1.3rem;}
