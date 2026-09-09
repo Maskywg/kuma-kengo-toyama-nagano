@@ -1,0 +1,649 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>隈研吾建築巡禮｜富山・長野 木構美學路線</title>
+<meta name="description" content="隈研吾在富山・長野兩縣的建築作品導覽：TOYAMAキラリ、戶隱奧社の茶屋、Snow Peak LAND STATION HAKUBA等，含「負ける建築」設計理念、作品深讀與行程路線建議。">
+<meta property="og:type" content="website">
+<meta property="og:title" content="隈研吾建築巡禮｜富山・長野 木構美學路線">
+<meta property="og:description" content="用「負ける建築」的眼光，重新走一趟富山長野紅葉自駕路線——每一棟建築都在向自然低頭。">
+<meta property="og:image" content="https://maskywg.github.io/kuma-kengo-toyama-nagano/og-image.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:url" content="https://maskywg.github.io/kuma-kengo-toyama-nagano/">
+<meta property="og:locale" content="zh_TW">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="隈研吾建築巡禮｜富山・長野 木構美學路線">
+<meta name="twitter:description" content="用「負ける建築」的眼光，重新走一趟富山長野紅葉自駕路線——每一棟建築都在向自然低頭。">
+<meta name="twitter:image" content="https://maskywg.github.io/kuma-kengo-toyama-nagano/og-image.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;600;700;900&family=Noto+Sans+TC:wght@300;400;500;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#1c1916;
+    --bg-alt:rgba(184,112,63,0.05);
+    --panel:rgba(48,42,36,0.55);
+    --line:rgba(217,201,168,0.16);
+    --ink:#ede7dc;
+    --ink-dim:#c7beac;
+    --ink-faint:#93897a;
+    --primary:#b8703f;
+    --primary-soft:rgba(184,112,63,0.16);
+    --gold:#d9c9a8;
+    --gold-soft:rgba(217,201,168,0.16);
+    --moss:#6b7568;
+    --indigo:#26221d;
+    --shadow: 0 20px 50px rgba(0,0,0,0.45);
+  }
+  *{box-sizing:border-box; margin:0; padding:0;}
+  html{scroll-behavior:smooth;}
+  body{
+    color:var(--ink);
+    font-family:"Noto Sans TC", sans-serif;
+    line-height:1.85;
+    font-weight:300;
+    background:
+      radial-gradient(ellipse 60% 45% at 8% 4%, rgba(184,112,63,0.26), transparent 60%),
+      radial-gradient(ellipse 55% 50% at 96% 14%, rgba(217,201,168,0.16), transparent 62%),
+      radial-gradient(ellipse 55% 45% at 90% 46%, rgba(107,117,104,0.26), transparent 60%),
+      radial-gradient(ellipse 60% 50% at 2% 56%, rgba(184,112,63,0.20), transparent 62%),
+      radial-gradient(ellipse 55% 45% at 94% 82%, rgba(217,201,168,0.14), transparent 60%),
+      radial-gradient(ellipse 60% 45% at 6% 96%, rgba(107,117,104,0.22), transparent 60%),
+      linear-gradient(180deg, #201c18 0%, #1c1916 40%, #17140f 100%);
+    background-attachment:fixed;
+  }
+  h1,h2,h3,h4{
+    font-family:"Noto Serif TC", serif;
+    font-weight:700;
+    color:var(--ink);
+    letter-spacing:0.02em;
+  }
+  a{color:var(--gold);}
+  img{max-width:100%; display:block;}
+  .wrap{max-width:1080px; margin:0 auto; padding:0 24px;}
+
+  /* ---------- Hero ---------- */
+  .hero{
+    position:relative;
+    min-height:100vh;
+    display:flex;
+    align-items:flex-end;
+    background:#000;
+    overflow:hidden;
+  }
+  .hero img{
+    position:absolute; inset:0;
+    width:100%; height:100%;
+    object-fit:cover;
+    opacity:0.8;
+  }
+  .hero::after{
+    content:"";
+    position:absolute; inset:0;
+    background:linear-gradient(180deg, rgba(12,10,8,0.35) 0%, rgba(12,10,8,0.25) 35%, rgba(12,10,8,0.95) 100%);
+  }
+  .hero-content{
+    position:relative; z-index:2;
+    width:100%;
+    padding:0 24px 7vh;
+    max-width:1080px;
+    margin:0 auto;
+  }
+  .hero-eyebrow{
+    display:inline-flex; align-items:center; gap:10px;
+    font-family:"Noto Serif TC", serif;
+    font-size:0.85rem;
+    letter-spacing:0.35em;
+    color:var(--gold);
+    margin-bottom:22px;
+    text-transform:uppercase;
+  }
+  .hero-eyebrow::before{content:"—"; color:var(--primary);}
+  .hero h1{
+    font-size:clamp(2.6rem, 7vw, 5.2rem);
+    line-height:1.05;
+    margin-bottom:18px;
+    text-shadow:0 6px 30px rgba(0,0,0,0.6);
+  }
+  .hero h1 small{
+    display:block;
+    font-size:0.32em;
+    font-weight:400;
+    color:var(--ink-dim);
+    letter-spacing:0.2em;
+    margin-top:14px;
+  }
+  .hero-desc{
+    max-width:580px;
+    color:var(--ink-dim);
+    font-size:1.05rem;
+    margin-bottom:28px;
+  }
+  .hero-tags{display:flex; flex-wrap:wrap; gap:10px;}
+  .tag{
+    border:1px solid var(--line);
+    padding:6px 16px;
+    border-radius:999px;
+    font-size:0.82rem;
+    color:var(--ink-dim);
+    background:rgba(0,0,0,0.25);
+    backdrop-filter:blur(4px);
+  }
+  .scroll-cue{
+    position:absolute; bottom:26px; left:50%; transform:translateX(-50%);
+    z-index:2; color:var(--ink-faint); font-size:0.75rem; letter-spacing:0.2em;
+    display:flex; flex-direction:column; align-items:center; gap:8px;
+  }
+  .scroll-cue span{
+    width:1px; height:34px; background:linear-gradient(var(--gold), transparent);
+    animation:scrollpulse 2s ease-in-out infinite;
+  }
+  @keyframes scrollpulse{0%,100%{opacity:0.2;}50%{opacity:1;}}
+
+  /* ---------- Section shell ---------- */
+  section{padding:110px 0;}
+  .section-head{margin-bottom:56px; max-width:640px;}
+  .kicker{
+    font-size:0.8rem; letter-spacing:0.3em; color:var(--primary);
+    font-family:"Noto Serif TC", serif; margin-bottom:14px; text-transform:uppercase;
+  }
+  .section-head h2{font-size:clamp(1.8rem,3.6vw,2.6rem); margin-bottom:16px;}
+  .section-head p{color:var(--ink-dim); font-size:1.02rem;}
+  .alt{background:var(--bg-alt);}
+
+  /* ---------- Intro strip ---------- */
+  .intro-grid{
+    display:grid; grid-template-columns:1.1fr 0.9fr; gap:56px; align-items:center;
+  }
+  .intro-grid p{color:var(--ink-dim); margin-bottom:16px; font-size:1.02rem;}
+  .intro-grid p b{color:var(--ink); font-weight:500;}
+  .stat-card{
+    background:var(--panel); border:1px solid var(--line); border-radius:4px;
+    padding:22px 24px;
+    backdrop-filter:blur(14px); -webkit-backdrop-filter:blur(14px);
+  }
+  .stat-grid{display:grid; grid-template-columns:1fr 1fr; gap:14px;}
+  .stat-num{
+    font-family:"Noto Serif TC",serif; font-size:1.55rem; color:var(--gold); font-weight:700;
+  }
+  .stat-label{font-size:0.82rem; color:var(--ink-faint); margin-top:4px;}
+
+  /* ---------- Term panel ---------- */
+  .term-panel{
+    background:var(--panel); border:1px solid var(--line); border-radius:6px;
+    padding:28px 26px; backdrop-filter:blur(14px); -webkit-backdrop-filter:blur(14px);
+  }
+  .term-list{list-style:none;}
+  .term-list li{
+    padding:12px 0; border-top:1px solid var(--line); display:grid; grid-template-columns:120px 1fr; gap:16px;
+  }
+  .term-list li:first-child{border-top:none; padding-top:0;}
+  .term-list b{color:var(--gold); font-family:"Noto Serif TC",serif; font-weight:700; font-size:0.95rem;}
+  .term-list span{color:var(--ink-dim); font-size:0.92rem;}
+
+  /* ---------- Timeline ---------- */
+  .timeline{position:relative; margin-top:10px;}
+  .timeline::before{
+    content:""; position:absolute; left:150px; top:6px; bottom:6px; width:1px;
+    background:linear-gradient(var(--primary), var(--gold), transparent);
+  }
+  .t-row{display:grid; grid-template-columns:150px 1fr; gap:30px; position:relative; padding:0 0 40px 0;}
+  .t-row:last-child{padding-bottom:0;}
+  .t-year{
+    font-family:"Noto Serif TC",serif; color:var(--gold); font-weight:700; font-size:0.98rem;
+    text-align:right; padding-top:2px;
+  }
+  .t-body{position:relative; padding-left:28px;}
+  .t-body::before{
+    content:""; position:absolute; left:-5px; top:8px; width:9px; height:9px;
+    border-radius:50%; background:var(--primary); box-shadow:0 0 0 4px var(--bg);
+  }
+  .t-body h4{font-size:1.05rem; margin-bottom:6px; color:var(--ink);}
+  .t-body p{color:var(--ink-dim); font-size:0.96rem;}
+
+  /* ---------- Feature (image + text) ---------- */
+  .feature{
+    display:grid; grid-template-columns:0.9fr 1.1fr; gap:0;
+    border:1px solid var(--line); border-radius:6px; overflow:hidden;
+    background:var(--panel);
+    backdrop-filter:blur(14px);
+    -webkit-backdrop-filter:blur(14px);
+  }
+  .feature img{height:100%; object-fit:cover; min-height:340px;}
+  .feature-body{padding:44px 44px;}
+  .feature-body h3{font-size:1.5rem; margin-bottom:16px;}
+  .feature-body p{color:var(--ink-dim); margin-bottom:14px;}
+
+  /* ---------- Works grid ---------- */
+  .spot-grid{display:grid; grid-template-columns:repeat(2,1fr); gap:2px; background:var(--line); border:1px solid var(--line); border-radius:6px; overflow:hidden;}
+  .spot{background:var(--panel); padding:32px 30px; backdrop-filter:blur(14px); -webkit-backdrop-filter:blur(14px);}
+  .spot-num{font-family:"Noto Serif TC",serif; color:var(--primary); font-size:0.85rem; letter-spacing:0.1em; margin-bottom:10px;}
+  .spot h4{font-size:1.2rem; margin-bottom:6px;}
+  .spot .spot-kami{color:var(--gold); font-size:0.85rem; margin-bottom:12px; display:block;}
+  .spot p{color:var(--ink-dim); font-size:0.95rem;}
+  .spot p+p{margin-top:8px;}
+
+  /* ---------- Banner ---------- */
+  .banner{
+    position:relative; min-height:64vh; display:flex; align-items:center; overflow:hidden;
+  }
+  .banner img{position:absolute; inset:0; width:100%; height:100%; object-fit:cover;}
+  .banner::after{
+    content:""; position:absolute; inset:0;
+    background:linear-gradient(90deg, rgba(12,10,8,0.92) 10%, rgba(12,10,8,0.35) 60%, rgba(12,10,8,0.15) 100%);
+  }
+  .banner .wrap{position:relative; z-index:2;}
+  .banner-box{max-width:480px;}
+  .banner-box .kicker{color:var(--gold);}
+  .banner-box h2{font-size:clamp(1.7rem,3.4vw,2.3rem); margin-bottom:16px;}
+  .banner-box p{color:var(--ink-dim);}
+
+  /* ---------- Guide cards ---------- */
+  .guide-grid{display:grid; grid-template-columns:repeat(3,1fr); gap:20px;}
+  .guide-card{
+    background:var(--panel); border:1px solid var(--line); border-radius:6px; padding:28px 26px;
+    backdrop-filter:blur(14px); -webkit-backdrop-filter:blur(14px);
+  }
+  .guide-card .icon{
+    width:40px; height:40px; border-radius:50%; background:var(--primary-soft); color:var(--primary);
+    display:flex; align-items:center; justify-content:center; font-size:1.1rem; margin-bottom:16px;
+  }
+  .guide-card h4{font-size:1.05rem; margin-bottom:10px;}
+  .guide-card p{color:var(--ink-dim); font-size:0.92rem;}
+  .guide-card p+p{margin-top:8px;}
+
+  /* ---------- Route steps ---------- */
+  .route{margin-top:12px;}
+  .route-step{
+    display:grid; grid-template-columns:44px 1fr; gap:20px; padding:20px 0; border-top:1px solid var(--line);
+  }
+  .route-step:first-child{border-top:none;}
+  .route-dot{
+    width:36px; height:36px; border-radius:50%; border:1px solid var(--gold); color:var(--gold);
+    display:flex; align-items:center; justify-content:center; font-family:"Noto Serif TC",serif; font-size:0.9rem;
+  }
+  .route-step h4{font-size:1.02rem; margin-bottom:6px; display:flex; gap:10px; align-items:baseline; flex-wrap:wrap;}
+  .route-step h4 .time{font-size:0.78rem; color:var(--ink-faint); font-weight:400; font-family:"Noto Sans TC",sans-serif;}
+  .route-step p{color:var(--ink-dim); font-size:0.92rem;}
+
+  /* ---------- Info table ---------- */
+  .info-table{width:100%; border-collapse:collapse; font-size:0.95rem;}
+  .info-table tr{border-top:1px solid var(--line);}
+  .info-table tr:first-child{border-top:none;}
+  .info-table td{padding:14px 10px; color:var(--ink-dim); vertical-align:top;}
+  .info-table td:first-child{color:var(--gold); width:170px; font-family:"Noto Serif TC",serif; white-space:nowrap;}
+
+  /* ---------- Chips ---------- */
+  .chip-row{display:flex; flex-wrap:wrap; gap:10px; margin-top:18px;}
+  .chip{
+    background:var(--gold-soft); border:1px solid rgba(217,201,168,0.35); color:var(--gold);
+    padding:8px 18px; border-radius:999px; font-size:0.88rem;
+  }
+
+  /* ---------- Footer ---------- */
+  footer{
+    background:#14110d; padding:60px 0 34px; border-top:1px solid var(--line);
+  }
+  footer .wrap{display:flex; flex-direction:column; gap:18px; align-items:flex-start;}
+  footer h3{font-size:1.3rem;}
+  footer p{color:var(--ink-faint); font-size:0.86rem; max-width:520px;}
+  .src-list{list-style:none; margin-top:6px;}
+  .src-list li{color:var(--ink-faint); font-size:0.82rem; margin-bottom:4px;}
+  .src-list a{color:var(--ink-dim);}
+
+  @media (max-width:860px){
+    .intro-grid{grid-template-columns:1fr;}
+    .feature{grid-template-columns:1fr;}
+    .feature img{min-height:240px;}
+    .spot-grid{grid-template-columns:1fr;}
+    .guide-grid{grid-template-columns:1fr;}
+    .timeline::before{left:78px;}
+    .t-row{grid-template-columns:78px 1fr; gap:16px;}
+    .banner{min-height:52vh;}
+    .banner .wrap{padding:0 24px;}
+    .term-list li{grid-template-columns:1fr; gap:4px;}
+  }
+</style>
+</head>
+<body>
+
+<!-- ================= HERO ================= -->
+<header class="hero">
+  <img src="images/hero-timber-facade.jpg" alt="隈研吾風格的木構建築外觀，直向木格柵包覆立面，坐落在雲霧繚繞的秋季山林間，室內燈光從格柵間隙透出">
+  <div class="hero-content">
+    <div class="hero-eyebrow">富山・長野 建築散策</div>
+    <h1>隈研吾建築巡禮
+      <small>KENGO KUMA IN TOYAMA &amp; NAGANO — 木構、光、與向自然低頭的建築</small>
+    </h1>
+    <p class="hero-desc">富山・長野紅葉自駕路線上，其實藏著好幾棟隈研吾的作品——從富山市中心的玻璃美術館，到戶隱神社參道入口的小茶屋，再到白馬雪山下的木構天花板。這些建築不搶戲，它們的任務是向周遭的山、林、雪低頭。</p>
+    <div class="hero-tags">
+      <span class="tag">富山縣・長野縣</span>
+      <span class="tag">負ける建築</span>
+      <span class="tag">木造・光・在地素材</span>
+      <span class="tag">對應紅葉八日自駕行程</span>
+    </div>
+  </div>
+  <div class="scroll-cue"><span></span>SCROLL</div>
+</header>
+
+<!-- ================= OVERVIEW ================= -->
+<section>
+  <div class="wrap">
+    <div class="intro-grid">
+      <div>
+        <div class="kicker">Overview</div>
+        <h2 style="margin-bottom:22px;">一位讓建築<br>「輸給」風景的建築師</h2>
+        <p><b>隈研吾</b>，1954年生於橫濱，東京大學建築系出身，1990年成立隈研吾建築都市設計事務所，現為東京大學特別教授。他在國內外完成超過200件作品，從車站、美術館、市政廳到咖啡廳，用途橫跨極廣，2019年更主導設計了2020東京奧運主場館「國立競技場」，把「木」帶進了全球最大的體育舞台。</p>
+        <p>但真正讓他自成一格的，是那句常被引用的「<b>負ける建築</b>」——與其用鋼筋混凝土蓋出宣示權威、與環境對抗的紀念碑，不如讓建築主動「輸」給周遭的山、樹、光線，用木材與自然素材把量體「柔化」到幾乎透明。這趟富山長野的紅葉自駕路線上，正好能一路遇見這種美學的不同表情。</p>
+      </div>
+      <div class="stat-card">
+        <div class="stat-grid">
+          <div>
+            <div class="stat-num">1954年</div>
+            <div class="stat-label">生於橫濱，2024年獲日本藝術院賞</div>
+          </div>
+          <div>
+            <div class="stat-num">1990年</div>
+            <div class="stat-label">成立隈研吾建築都市設計事務所</div>
+          </div>
+          <div>
+            <div class="stat-num">200+</div>
+            <div class="stat-label">國內完成作品件數</div>
+          </div>
+          <div>
+            <div class="stat-num">2019年</div>
+            <div class="stat-label">國立競技場（東京奧運主場館）竣工</div>
+          </div>
+          <div>
+            <div class="stat-num">富山4棟</div>
+            <div class="stat-label">縣內作品（含2023年最新完工）</div>
+          </div>
+          <div>
+            <div class="stat-num">長野6棟+</div>
+            <div class="stat-label">縣內作品分布各地</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= PHILOSOPHY DEEP DIVE ================= -->
+<section class="alt">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="kicker">Philosophy</div>
+      <h2>「負ける建築」到底在說什麼</h2>
+      <p>這個詞常被直譯成「輸的建築」，聽起來像是自謙，但其實是一套完整的設計立場——建築應該向環境「示弱」，而不是用量體與材質壓過周遭的一切。</p>
+    </div>
+    <div class="feature" style="margin-bottom:44px;">
+      <img src="images/philosophy-lattice-detail.jpg" alt="隈研吾式木格柵細部特寫，細木條交錯編織成透光屏幕，夕陽穿過縫隙在地面投下長長光影，背景是模糊的綠色森林">
+      <div class="feature-body">
+        <div class="kicker">A Closer Look</div>
+        <h3>把「牆」拆成千萬條細木</h3>
+        <p>隈研吾最常見的手法，是把原本一整片實牆拆解成數以百計、甚至上千的細木條或木格柵，讓光線、風、視線都能穿透其中——建築不再是一道阻隔內外的界線，而是一層可以呼吸的「屏幕」。這個手法在他手上出現過無數次變形：直向排列的縱格子、交錯編織的網狀結構、放射狀的天花板梁架，材質也從木頭延伸到竹子、石材、金屬網。</p>
+        <p>他把20世紀那種用鋼筋混凝土與自然對抗、追求「勝過」環境的建築思維，稱為一種已經破產的美學；相對地，他主張建築應該用在地木材把自己「輕量化」，讓量體消融進周遭的地景裡——這也是為什麼他的作品經常刻意壓低存在感，讓山、森林、雪景才是真正的主角。</p>
+      </div>
+    </div>
+    <div class="term-panel">
+      <ul class="term-list">
+        <li><b>負ける建築</b><span>核心理念：建築主動向環境「示弱」，用木材與自然素材取代對抗性的鋼筋混凝土量體。</span></li>
+        <li><b>縱格子</b><span>最招牌的手法之一：把牆面拆解成密集排列的直向木條，讓光線與視線穿透，同時保留隱約的包覆感。</span></li>
+        <li><b>在地木材</b><span>盡量使用當地產木材（如富山產杉），讓建築的材料本身就帶著土地的記憶。</span></li>
+        <li><b>透過性</b><span>刻意設計成半透明、可穿透的立面，模糊室內外的界線，讓建築融入而非阻隔景觀。</span></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ================= CAREER TIMELINE ================= -->
+<section>
+  <div class="wrap">
+    <div class="section-head">
+      <div class="kicker">Career</div>
+      <h2>從泡沫經濟的挫敗，到「和の大家」</h2>
+      <p>隈研吾的職涯並非一路順遂——1990年代初期一件東京作品曾引來嚴厲批評，他因此離開東京、轉往地方接案十餘年，反而在這段「下放」時期磨出了以木材與在地素材為核心的風格，最終在2000年代後半重返國際舞台核心。</p>
+    </div>
+    <div class="timeline">
+      <div class="t-row">
+        <div class="t-year">1954年</div>
+        <div class="t-body">
+          <h4>生於橫濱</h4>
+          <p>1979年東京大學大學院建築意匠專攻修士課程修了，曾任職日本設計、戸田建設，1985–86年赴美國哥倫比亞大學擔任客座研究員。</p>
+        </div>
+      </div>
+      <div class="t-row">
+        <div class="t-year">1990年</div>
+        <div class="t-body">
+          <h4>成立隈研吾建築都市設計事務所</h4>
+          <p>同年完成的東京作品受到業界嚴厲批評，此後轉往地方城市接案十餘年，反而奠定了他日後以木材、在地素材為核心的設計語彙。</p>
+        </div>
+      </div>
+      <div class="t-row">
+        <div class="t-year">1996–2001年</div>
+        <div class="t-body">
+          <h4>地方作品逐漸受到肯定</h4>
+          <p>1996年「伝統芸能伝承館 森舞台」獲日本建築學會賞作品賞，2001年再獲村野藤吾賞，確立了他作為「木」與「和」建築代表人物的地位。</p>
+        </div>
+      </div>
+      <div class="t-row">
+        <div class="t-year">2003年</div>
+        <div class="t-body">
+          <h4>戶隱奧社の茶屋竣工</h4>
+          <p>在長野戶隱神社奧社參道入口，完成這座以縱向木格柵包覆的小型茶屋——這趟紅葉自駕路線上最早完工的一件作品。</p>
+        </div>
+      </div>
+      <div class="t-row">
+        <div class="t-year">2009年</div>
+        <div class="t-body">
+          <h4>根津美術館・毎日芸術賞</h4>
+          <p>東京根津美術館本館竣工，同年獲毎日芸術賞，是他重返國際級大案的重要轉折點之一。</p>
+        </div>
+      </div>
+      <div class="t-row">
+        <div class="t-year">2015年</div>
+        <div class="t-body">
+          <h4>TOYAMAキラリ竣工</h4>
+          <p>富山市玻璃美術館、市立圖書館與銀行共構的複合建築，用富山杉、玻璃與石材打造出一道貫穿樓層的斜向中庭，是縣內最具代表性的作品。</p>
+        </div>
+      </div>
+      <div class="t-row">
+        <div class="t-year">2019年</div>
+        <div class="t-body">
+          <h4>國立競技場竣工</h4>
+          <p>2020東京奧運主場館，以層疊木構元素包覆巨大量體，把「負ける建築」的理念帶進全球規模最大的體育建築舞台。</p>
+        </div>
+      </div>
+      <div class="t-row">
+        <div class="t-year">2020年</div>
+        <div class="t-body">
+          <h4>Snow Peak LAND STATION HAKUBA</h4>
+          <p>在白馬村打造以放射狀木構天花板著稱的複合設施，靈感取自雪的結晶，是這趟行程裡最靠近雪山主題的一件作品。</p>
+        </div>
+      </div>
+      <div class="t-row">
+        <div class="t-year">2023–2024年</div>
+        <div class="t-body">
+          <h4>近作與榮譽</h4>
+          <p>2023年富山「オーバード・ホール中ホール」開館；2024年獲日本藝術院賞・恩賜賞，持續活躍於國內外建築舞台。</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= TOYAMA KIRARI FEATURE ================= -->
+<section class="alt">
+  <div class="wrap">
+    <div class="feature">
+      <img src="images/toyama-kirari-atrium.jpg" alt="TOYAMAキラリ館內斜向中庭示意圖，木格柵牆面與石材立面環繞挑高空間，天窗灑下自然光，遠處可見彩色玻璃藝術品">
+      <div class="feature-body">
+        <div class="kicker">Landmark · 富山市中心</div>
+        <h3>TOYAMAキラリ：把立山連峰搬進中庭</h3>
+        <p>2015年開幕的TOYAMAキラリ，是富山市立圖書館、市玻璃美術館與富山第一銀行本店共構的複合設施，由RIA、隈研吾建築都市設計事務所、三四五建築研究所三方聯合設計。外觀用鋁、玻璃與白御影石等約1,000片異材質面板組合而成，據說靈感正是取自立山連峰起伏的山肌紋理。</p>
+        <p>建築最戲劇性的部分，是一道從2樓貫穿到6樓的<b>斜向挑空中庭</b>，自然光從高處天窗一路灑落；室內壁面與隔間大量使用富山縣產杉木製成的直向格柵，在現代量體裡保留木頭的溫度。6樓常設展「Glass Art Garden」展出玻璃藝術大師Dale Chihuly的作品，讓自然光、木紋與玻璃色彩在同一個空間裡交會。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= OKUSHA CHAYA BANNER ================= -->
+<section class="banner">
+  <img src="images/okusha-teahouse.jpg" alt="戶隱奧社の茶屋，木格柵包覆的小屋佇立在杉木參道旁，暖黃燈光從木縫透出，後方可見石階與鳥居輪廓">
+  <div class="wrap">
+    <div class="banner-box">
+      <div class="kicker">Landmark · 戶隱奧社參道入口</div>
+      <h2>奧社の茶屋：兩公里杉木參道前的一次「暖身」</h2>
+      <p>這是隈研吾在這趟路線上最早完工的作品——2003年為戶隱神社直營、就蓋在奧社參道入口的一間そば処。緩坡切妻屋頂配上縱向木格柵立面，內側襯著茶色聚碳酸酯板，白天透光、夜裡透出暖黃燈光，尺度小巧卻已經看得出他日後一路延續的語彙。海拔約1,200公尺，因積雪只在4月下旬至11月中旬營業，剛好落在紅葉季的造訪窗口內。</p>
+    </div>
+  </div>
+</section>
+
+<!-- ================= SNOW PEAK FEATURE ================= -->
+<section>
+  <div class="wrap">
+    <div class="feature">
+      <img src="images/snowpeak-ceiling.jpg" alt="Snow Peak LAND STATION HAKUBA室內木構天花板，木梁以放射狀交錯排列成雪花結晶般的幾何圖案，落地窗外可見白雪覆蓋的北阿爾卑斯山脈">
+      <div class="feature-body">
+        <div class="kicker">Landmark · 白馬村</div>
+        <h3>Snow Peak LAND STATION HAKUBA：把雪的結晶蓋成天花板</h3>
+        <p>2020年開業的複合設施，由露營品牌Snow Peak與隈研吾合作打造，坐落在白馬村北城——跟這趟行程Day3入住的白馬村是同一個「北城」地區。最引人注目的，是入口大廳那片以放射狀木梁交錯搭建、彷彿雪花結晶放大版的天花板結構，落地窗外就是北阿爾卑斯連峰的雪山稜線。</p>
+        <p>園區內結合零售、餐飲、住宿與戶外體驗機能，全年營業；星巴克門市早上7點就開，跟這趟行程Day4清晨先去白馬大橋看日出、再回程順路喝杯咖啡的時間點剛好對得上。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= MORE WORKS GRID ================= -->
+<section class="alt">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="kicker">More Works</div>
+      <h2>富山・長野還有這些作品</h2>
+      <p>除了上面三棟以外，隈研吾在兩縣還有其他作品——有些就在富山市區、順路就能看到；有些則落在較遠的城鎮，需要專程安排才到得了，這裡一併整理給有興趣深入的人參考。</p>
+    </div>
+    <div class="spot-grid">
+      <div class="spot">
+        <div class="spot-num">富山市・順路</div>
+        <h4>オーバード・ホール 中ホール</h4>
+        <span class="spot-kami">2023年竣工・富山市牛島町</span>
+        <p>富山市芸術文化ホール的中型音樂廳，隈研吾建築都市設計事務所擔任設計夥伴，就在富山駅北口步行可達的範圍，是這份清單裡最新完工的作品。</p>
+      </div>
+      <div class="spot">
+        <div class="spot-num">立山町・需專程</div>
+        <h4>Healthian-wood（ヘルジアンウッド）</h4>
+        <span class="spot-kami">2019–2020年・富山県中新川郡立山町</span>
+        <p>以香草花園、餐廳、三溫暖組成的複合園區，隈研吾設計的「香薰工坊」採無柱傘型結構。從富山駅車程約40分鐘，需要專程前往，不在自駕路線的順路範圍內。</p>
+      </div>
+      <div class="spot">
+        <div class="spot-num">長野・較遠</div>
+        <h4>飯山市文化交流館「なちゅら」</h4>
+        <span class="spot-kami">2016年・長野県飯山市</span>
+        <p>鋼筋混凝土骨架外覆落葉松與耐候鋼板，北陸新幹線飯山駅步行5分鐘可達。位置偏北，離白馬、戶隱這段路線有一段距離，建議當作另一趟行程的目的地。</p>
+      </div>
+      <div class="spot">
+        <div class="spot-num">輕井澤・較遠</div>
+        <h4>Birch Moss Chapel（白樺と苔のチャペル）</h4>
+        <span class="spot-kami">2015年・長野県軽井沢町</span>
+        <p>白樺樹枝隨機交錯支撐起玻璃屋頂、地面鋪滿苔蘚的森林教堂，是隈研吾作品裡最詩意的一件，但輕井澤位在長野縣東側，離這趟自駕路線較遠。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= ITINERARY FIT ================= -->
+<section>
+  <div class="wrap">
+    <div class="section-head">
+      <div class="kicker">Route Fit</div>
+      <h2>怎麼併進「富山・長野紅葉八日自駕」行程</h2>
+      <p>把這幾棟作品對照原本的8天行程，幾乎不用額外繞路——大部分本來就在你路過的地方，只是多留意一下建築本身。</p>
+    </div>
+    <div class="route">
+      <div class="route-step">
+        <div class="route-dot">1</div>
+        <div>
+          <h4>TOYAMAキラリ <span class="time">Day1 / Day2 / Day7 / Day8・富山市區</span></h4>
+          <p>富山駅走路約10分鐘，這幾天晚上或空檔時間都能順路排進去，館內玻璃美術館開到18:00（週五、六到20:00）。</p>
+        </div>
+      </div>
+      <div class="route-step">
+        <div class="route-dot">2</div>
+        <div>
+          <h4>オーバード・ホール中ホール <span class="time">Day1 / Day7・富山駅北口</span></h4>
+          <p>就在富山駅北口一帶，跟租車取還車的區域是同一個範圍，路過順便看外觀即可，2023年剛開幕的新作品。</p>
+        </div>
+      </div>
+      <div class="route-step">
+        <div class="route-dot">3</div>
+        <div>
+          <h4>Snow Peak LAND STATION HAKUBA <span class="time">Day4・白馬大橋／大出公園附近</span></h4>
+          <p>離白馬大橋、大出公園約1.3公里，清晨看完日出、逛完大出公園後，順路開2、3分鐘過去看看天花板結構，星巴克7點就開。</p>
+        </div>
+      </div>
+      <div class="route-step">
+        <div class="route-dot">4</div>
+        <div>
+          <h4>戶隱奧社の茶屋 <span class="time">Day4・戶隱神社奧社參道入口</span></h4>
+          <p>本來就會走到奧社參道入口，順路看一眼這棟2003年的作品；營業到11月中旬，時間點也對得上，可以當作午餐蕎麥麵之外的另一個選項。</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= HOURS ================= -->
+<section class="alt">
+  <div class="wrap">
+    <div class="intro-grid" style="align-items:start;">
+      <div>
+        <div class="kicker">Hours</div>
+        <h2 style="margin-bottom:22px;">開放時間・參觀資訊</h2>
+        <table class="info-table">
+          <tr><td>TOYAMAキラリ</td><td>玻璃美術館9:30–18:00（週五・六至20:00），圖書館開放時間略有不同，全年無休</td></tr>
+          <tr><td>オーバード・ホール中ホール</td><td>演出場館，開放時間依當期節目而定，建議先查官網場次</td></tr>
+          <tr><td>戶隱奧社の茶屋</td><td>營業期間4月下旬–11月中旬（積雪期休業），そば処營業時間依現場公告</td></tr>
+          <tr><td>Snow Peak LAND STATION HAKUBA</td><td>主店舗11:00–19:00，星巴克7:00–19:00，全年無休（雪峰食堂週二休）</td></tr>
+        </table>
+      </div>
+      <div>
+        <div class="kicker">Note</div>
+        <h2 style="margin-bottom:22px;">參觀小提醒</h2>
+        <table class="info-table">
+          <tr><td>拍照</td><td>多數作品是仍在正常營業的公共設施或商業空間，拍照前留意是否有禁止攝影的區域（例如美術館常設展）。</td></tr>
+          <tr><td>季節限制</td><td>奧社の茶屋、Healthian-wood等山區設施會因積雪季節性休業，出發前建議再次確認官網公告。</td></tr>
+          <tr><td>非官方導覽</td><td>本頁為獨立策展整理，非隈研吾建築都市設計事務所官方網站，資訊如有出入請以各設施官網為準。</td></tr>
+        </table>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= FOOTER ================= -->
+<footer>
+  <div class="wrap">
+    <h3>隈研吾建築巡禮｜富山・長野</h3>
+    <p>整理富山、長野兩縣境內隈研吾建築都市設計事務所的作品，對應「富山・長野紅葉八日自駕」行程路線。內容整理自隈研吾建築都市設計事務所官方網站、各設施官方網站、Wikipedia等公開資料，圖片為AI生成之示意插畫，僅供氛圍參考，並非任何實際建築的攝影或重現，實際造訪請以現場與官方資訊為準。</p>
+    <div class="chip-row">
+      <span class="chip">負ける建築</span>
+      <span class="chip">木構建築</span>
+      <span class="chip">TOYAMAキラリ</span>
+      <span class="chip">戶隱奧社の茶屋</span>
+      <span class="chip">Snow Peak LAND STATION HAKUBA</span>
+    </div>
+    <ul class="src-list">
+      <li>資料來源：<a href="https://kkaa.co.jp/area/toyama/" target="_blank" rel="noopener">隈研吾建築都市設計事務所｜富山県作品一覧</a></li>
+      <li>資料來源：<a href="https://kkaa.co.jp/area/nagano/" target="_blank" rel="noopener">隈研吾建築都市設計事務所｜長野県作品一覧</a></li>
+      <li>資料來源：<a href="https://kkaa.co.jp/project/toyama-kirari/" target="_blank" rel="noopener">隈研吾建築都市設計事務所｜TOYAMAキラリ</a></li>
+      <li>資料來源：<a href="https://ja.wikipedia.org/wiki/%E9%9A%88%E7%A0%94%E5%90%BE" target="_blank" rel="noopener">Wikipedia「隈研吾」</a></li>
+      <li>資料來源：<a href="https://okushanochaya.jp/" target="_blank" rel="noopener">奥社の茶屋 公式サイト</a></li>
+      <li>資料來源：<a href="https://www.snowpeak.co.jp/landstation/hakuba/" target="_blank" rel="noopener">Snow Peak LAND STATION HAKUBA 公式サイト</a></li>
+      <li>對應行程：<a href="https://maskywg.github.io/nagano-toyama-autumn/" target="_blank" rel="noopener">富山・長野紅葉八日自駕</a></li>
+    </ul>
+  </div>
+</footer>
+
+</body>
+</html>
